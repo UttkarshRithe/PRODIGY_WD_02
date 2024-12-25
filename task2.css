@@ -1,0 +1,129 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Stopwatch display */
+  .display {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Button styles */
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .start {
+    background-color: #4caf50;
+  }
+  
+  .pause {
+    background-color: #ff9800;
+  }
+  
+  .reset {
+    background-color: #f44336;
+  }
+  
+  .lap {
+    background-color: #2196f3;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Lap list styles */
+  .laps {
+    margin-top: 30px;
+    text-align: left;
+  }
+  
+  .laps h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-decoration: underline;
+  }
+  
+  .lap-list {
+    list-style-type: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  .lap-list li {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 5px 0;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .lap-list li span {
+    font-weight: bold;
+  }
+  
+  .lap-list li:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
